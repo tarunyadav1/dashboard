@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 // project imports
-import MainLayout from './../layout/index';
+import Layout from './../layout/layout';
 
 // dashboard routing
 import Dashboard from '../views/dashboard/dashboard';
@@ -12,11 +12,11 @@ import Dashboard from '../views/dashboard/dashboard';
 const MainRoutes = () => {
     return (
         <Route>
-            <MainLayout>
+            <Layout>
                 <Switch>
                     <Route path="/" exact component={Dashboard} />
                 </Switch>
-            </MainLayout>
+            </Layout>
         </Route>
     );
 };

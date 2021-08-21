@@ -1,9 +1,9 @@
 @import '../../../../assets/scss//style.scss';
 
-.login {
+.register {
     display: grid;
     grid-template-columns: 40% 60%;
-    position: relative;
+    // position: relative;
 
     .left-side {
         height: 100vh;
@@ -73,6 +73,19 @@
             padding: 3rem 2rem;
             padding-top: 1rem;
 
+            .name {
+                display: flex;
+                width: 95%;
+
+                .first-name {
+                    margin-right: 2rem;
+                    width: 45;
+                }
+                .last-name {
+                    width: 45%;
+                }
+            }
+
             .label {
                 margin-bottom: 10px;
                 font-family: $fontLato;
@@ -90,12 +103,16 @@
                 margin-bottom: 1rem;
             }
 
-            .forgot-password {
-                font-family: $fontLato;
-                color: #346bd5;
-                font-size: 16px;
-                margin-bottom: 1rem;
-                cursor: pointer;
+            .password-container {
+                position: relative;
+                img {
+                    position: absolute;
+                    bottom: 1.5rem;
+                    right: 1.5rem;
+                    width: 21px;
+                    height: 21px;
+                    cursor: pointer;
+                }
             }
 
             button {
@@ -111,10 +128,31 @@
                 color: $white;
                 border: none;
             }
+
+            .check-input {
+                display: flex;
+                font-family: $fontLato;
+                align-self: flex-start;
+                font-size: 16px;
+                margin-bottom: 1rem;
+                // width: 100%;
+
+                input {
+                    margin: 0;
+                    width: min-content;
+                    align-self: center;
+                    margin-right: 0.6rem;
+                    cursor: pointer;
+                }
+
+                div {
+                    align-self: center;
+                }
+            }
         }
     }
 
-    .register-link {
+    .login-link {
         text-align: center;
         font-family: $fontLato;
         color: #858585;

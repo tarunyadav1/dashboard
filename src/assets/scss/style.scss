@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+// Color codes
+$white: #ffffff;
+$black: #000000;
+$primary: #0d5f9a;
+$secondary: #858585;
+$danger: #af0000;
+$success: #4bb543;
+$link: #346bd5;
+$peach: #f4ecdd;
+$purple: #6972c4;
+$lightPink: #efdada;
+$lightPurple: #dee0ef;
+$lightBlue: #ddefe0;
+$lightRed: #e9a0a0;
+$lightGreen: #9bdd7c;
+$lightGrey: #b0b0b0;
+$darkGrey: #eaeaea;
+$mildGrey: #ededed;
+$bgGrey: #f5f5f5;
+
+// Typography
+$fontLato: 'Lato', sans-serif;
+$fontMontserrat: 'Montserrat', sans-serif;
+
+// View ports / Screens
+$a-vp: 320px;
+$b-vp: 480px;
+$c-vp: 600px;
+$d-vp: 768px;
+$e-vp: 992px;
+$f-vp: 1200px;
+
+body {
+    font-family: $fontMontserrat;
+    a {
+        text-decoration: none;
+        color: $link;
+    }
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 3px solid red;
+}
