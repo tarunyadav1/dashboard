@@ -6,6 +6,8 @@ import Layout from './../layout/layout';
 
 // dashboard routing
 import Dashboard from '../views/dashboard/dashboard';
+import Setting from '../views/setting/setting';
+import Users from '../views/users/users';
 
 //-----------------------|| MAIN ROUTING ||-----------------------//
 
@@ -15,6 +17,8 @@ const MainRoutes = () => {
             <Layout>
                 <Switch>
                     <Route path="/" exact component={Dashboard} />
+                    <Route path="/settings" component={Setting} />
+                    <Route path="/users" component={Users} />
                 </Switch>
             </Layout>
         </Route>

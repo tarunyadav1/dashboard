@@ -4,6 +4,7 @@ import TransactionIcon from '../../assets/images/sidebar-transaction.svg';
 import ScheduleIcon from '../../assets/images/sidebar-schedule.svg';
 import UserIcon from '../../assets/images/sidebar-user.svg';
 import SettingsIcon from '../../assets/images/sidebar-settings.svg';
+import { Link } from 'react-router-dom';
 
 import './Sidebar.scss';
 
@@ -45,10 +46,10 @@ const Sidebar = () => {
                 <div>
                     {SCREEN.map(({ page, path, icon }, i) => {
                         return (
-                            <a key={page} href={path} className={`link`}>
+                            <Link key={page} to={path} className={`link`}>
                                 <img src={icon} alt={page} width="18px" height="18px" className="icon" />
                                 <p className={`name`}>{page}</p>
-                            </a>
+                            </Link>
                         );
                     })}
                 </div>

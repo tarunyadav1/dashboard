@@ -2,14 +2,12 @@
 
 .dashboard-container {
     display: flex;
-    height: 100vh;
     background-color: $bgGrey;
+    height: 100vh;
 
     .sidebar-container {
-        height: 100%;
         width: 360px;
-        padding: 40px;
-        padding-right: 0;
+        padding: 2rem;
 
         @media (max-width: $d-vp) {
             padding-left: 0;
@@ -19,12 +17,9 @@
 
     .content {
         width: calc(100% - 280px);
-        padding: 40px;
+        padding: 2rem;
         padding-left: 20px;
         max-width: 100%;
-        overflow-x: auto;
-        overflow-y: auto;
-        flex: 1;
 
         @media (max-width: $d-vp) {
             width: calc(100% - 80px);

@@ -6,6 +6,8 @@
     padding: 2rem 2.5rem;
     display: flex;
     flex-direction: column;
+    // height: calc(100vh - 150px);
+    height: calc(100% - 50px);
 
     .link {
         display: flex;
