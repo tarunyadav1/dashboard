@@ -1,0 +1,59 @@
+@import '../../assets/scss/style.scss';
+
+.schedule-card {
+    padding: 1rem 2rem;
+    background-color: $white;
+    border-radius: 20px;
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .see-all {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: $secondary;
+            cursor: pointer;
+
+            img {
+                margin-left: 5px;
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+
+    .main-content {
+        font-family: $fontLato;
+
+        .schedule-item {
+            margin: 1.5rem 0;
+            padding-left: 1rem;
+
+            .title {
+                font-size: 14px;
+                margin: 0.5rem 0;
+            }
+
+            .time {
+                font-size: 12px;
+                color: $secondary;
+                margin: 0.5rem 0;
+            }
+
+            .location {
+                font-size: 12px;
+                color: $secondary;
+            }
+        }
+
+        .first {
+            border-left: 5px solid #9bdd7c;
+        }
+
+        .second {
+            border-left: 5px solid #6972c4;
+        }
+    }
+}
