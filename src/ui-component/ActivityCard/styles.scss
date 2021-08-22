@@ -1,0 +1,69 @@
+@import '../../assets/scss/style.scss';
+
+.activity-card {
+    padding: 1.5rem 2rem;
+    background-color: $white;
+    border-radius: 20px;
+    margin-right: 2rem;
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            h3 {
+                margin: 0;
+            }
+
+            .date {
+                font-size: 14px;
+                color: $secondary;
+                display: flex;
+
+                p {
+                    margin: 0;
+                }
+
+                .chevron-down {
+                    font-size: 14px;
+                    transform: rotate(90deg);
+                    cursor: pointer;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            column-gap: 2rem;
+            font-size: 14px;
+            font-family: $fontLato;
+            color: $secondary;
+
+            .guest::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 7.5px;
+                background-color: #e9a0a0;
+                margin-right: 5px;
+            }
+
+            .user::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 7.5px;
+                background-color: #9bdd7c;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .activity-graph {
+        width: 100%;
+        margin: 2rem 0;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,41 @@
+@import '../../assets/scss/style.scss';
+
+.card {
+    min-width: calc(25% - 40px);
+    // margin-bottom: 40px;
+    padding: 20px 26px;
+    border-radius: 20px;
+
+    &.peach {
+        background-color: $peach;
+    }
+
+    &.light-blue {
+        background-color: $lightBlue;
+    }
+
+    &.light-pink {
+        background-color: $lightPink;
+    }
+
+    &.light-purple {
+        background-color: $lightPurple;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .value {
+        font-family: $fontMontserrat;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .title {
+        font-size: 14px;
+        margin-bottom: 5px;
+        font-family: $fontLato;
+    }
+}

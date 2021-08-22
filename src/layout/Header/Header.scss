@@ -1,0 +1,58 @@
+@import '../../assets/scss/style.scss';
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+
+    .view-name {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .header-items {
+        display: flex;
+        align-items: center;
+
+        .input {
+            position: relative;
+            margin-right: 2.5rem;
+            input {
+                border-radius: 10px;
+                background-color: $white;
+                border: none;
+                outline: none;
+                padding: 6px 15px;
+                font-family: $fontLato;
+                font-size: 16px;
+                color: $black;
+                min-width: 6rem;
+
+                &::placeholder {
+                    font-size: 14px;
+                    font-family: $fontLato;
+                    color: $lightBlue;
+                }
+            }
+
+            img {
+                position: absolute;
+                top: 7px;
+                right: 10px;
+            }
+        }
+
+        .notification {
+            margin-right: 2.5rem;
+            cursor: pointer;
+        }
+
+        .profile {
+            img {
+                border-radius: 25px;
+            }
+            cursor: pointer;
+            margin-right: 2.5rem;
+        }
+    }
+}

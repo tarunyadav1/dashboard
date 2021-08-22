@@ -1,0 +1,87 @@
+@import '../../assets/scss/style.scss';
+
+.top-products {
+    padding: 1rem 2rem;
+    background-color: $white;
+    border-radius: 20px;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .date {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: $secondary;
+        }
+
+        .chevron-down {
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+    }
+
+    .graph-box {
+        display: flex;
+        // justify-content: space-between;
+        padding: 1rem 0;
+        height: max-content;
+
+        .pie-chart {
+            flex: 1;
+            min-height: 180px;
+        }
+
+        .info {
+            flex-basis: 35%;
+            .info-item {
+                margin-bottom: 2rem;
+                div {
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                    font-family: $fontMontserrat;
+                    line-height: 1;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-family: $fontLato;
+                    color: $secondary;
+                    margin-left: 10px;
+                }
+            }
+
+            .first::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 7.5px;
+                background-color: #98d89e;
+                transform: translateX(-10px);
+            }
+
+            .second::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 7.5px;
+                background-color: #f7dc7d;
+                transform: translateX(-10px);
+            }
+
+            .third::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 7.5px;
+                background-color: #e9a0a0;
+                transform: translateX(-10px);
+            }
+        }
+    }
+}
