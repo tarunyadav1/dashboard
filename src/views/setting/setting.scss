@@ -1,0 +1,171 @@
+@import '../../assets/scss/style.scss';
+
+.setting-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    margin-right: 2rem;
+
+    .left {
+        flex: 1;
+        margin-right: 40px;
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account-card {
+        padding: 1rem 2rem 2rem 2rem;
+        margin-bottom: 40px;
+        border-radius: 20px;
+        background-color: $white;
+
+        button {
+            border: none;
+            background: #ffffff;
+            border: 1px solid #858585;
+            border-radius: 5px;
+            font-size: 10px;
+            font-weight: 700;
+            color: #858585;
+            padding: 0.4rem 1rem;
+            cursor: pointer;
+        }
+        input {
+            border-radius: 10px;
+            background-color: $bgGrey;
+            border: none;
+            outline: none;
+            padding: 10px 15px;
+            font-family: $fontLato;
+            font-size: 16px;
+            color: $black;
+            min-width: 6rem;
+            margin-bottom: 1rem;
+            width: 93%;
+
+            &::placeholder {
+                font-size: 14px;
+                font-family: $fontLato;
+            }
+        }
+
+        label {
+            display: block;
+            font-family: $fontLato;
+            font-size: 16px;
+            margin-bottom: 0.5rem;
+        }
+
+        .password-container {
+            position: relative;
+            img {
+                position: absolute;
+                bottom: 1.5rem;
+                right: 0.7rem;
+                width: 21px;
+                height: 21px;
+                cursor: pointer;
+            }
+        }
+
+        .save-btn {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                background: #519bd0;
+                border-radius: 10px;
+                padding: 0.6rem 2rem;
+                font-weight: bold;
+                font-size: 16px;
+                font-family: $fontMontserrat;
+                color: #ffffff;
+                border: none;
+            }
+        }
+    }
+}
+
+.security-card {
+    padding: 1rem 2rem;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: $white;
+
+    h4 {
+        margin-bottom: 1rem;
+        &.danger {
+            color: $danger;
+        }
+    }
+
+    .two-step-verify {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .enable-toggle {
+            width: 45px;
+            height: 21px;
+            padding: 0 4px;
+            border-radius: 34px;
+            display: flex;
+            align-items: center;
+            background-color: $darkGrey;
+            cursor: pointer;
+
+            .toggle-ball {
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background-color: white;
+                transform: translateX(0px);
+                transition: 0.2s all linear;
+            }
+
+            &.enabled {
+                background-color: $lightGreen;
+
+                .toggle-ball {
+                    transform: translateX(30px);
+                }
+            }
+        }
+    }
+}
+
+.danger-card {
+    padding: 2rem;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: $white;
+
+    h4 {
+        margin: 0;
+        margin-bottom: 1.5rem;
+        color: #af0000;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid $danger;
+        color: $danger;
+        padding: 0.7rem 0;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: $fontMontserrat;
+
+        &:hover {
+            background-color: $danger;
+            color: $white;
+        }
+    }
+}
