@@ -1,8 +1,8 @@
+import StatusCard from '../../ui-component/StatusCard';
+import ActivityCard from '../../ui-component/ActivityCard';
+import TopProducts from '../../ui-component/TopProducts';
+import ScheduleCard from '../../ui-component/ScheduleCard';
 import { CARD_DATA } from '../../utils/constant';
-import StatusCard from '../../ui-component/StatusCard/StatusCard';
-import ActivityCard from '../../ui-component/ActivityCard/ActivityCard';
-import TopProducts from '../../ui-component/TopProducts/TopProducts';
-import ScheduleCard from '../../ui-component/ScheduleCard/ScheduleCard';
 
 import './styles.scss';
 

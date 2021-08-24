@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // routes
 import MainRoutes from './MainRoutes';
 
-// sample page routing
+// Auth page routing
 import Login from '../views/pages/authentication/Login/Login';
 import Register from '../views/pages/authentication/Register/Register';
 

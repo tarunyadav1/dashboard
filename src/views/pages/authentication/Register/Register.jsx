@@ -4,7 +4,8 @@ import AppleIcon from '../../../../assets/images/apple-icon.svg';
 import Hide from '../../../../assets/images/hide.svg';
 import Show from '../../../../assets/images/show.svg';
 import { Link } from 'react-router-dom';
-import './register.scss';
+
+import './styles.scss';
 
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);

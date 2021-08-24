@@ -1,7 +1,7 @@
 import Sidebar from './Sidebar/Sidebar';
 import Header from './Header/Header';
 
-import './layout.scss';
+import './styles.scss';
 
 const index = ({ children }) => {
     return (

@@ -3,7 +3,7 @@ import GoogleIcon from '../../../../assets/images/google-icon.svg';
 import AppleIcon from '../../../../assets/images/apple-icon.svg';
 import { Link, useHistory } from 'react-router-dom';
 
-import './login.scss';
+import './styles.scss';
 
 const Login = () => {
     const history = useHistory();

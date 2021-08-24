@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 // project imports
-import Layout from './../layout/layout';
+import Layout from './../layout/index';
 
 // dashboard routing
 import Dashboard from '../views/dashboard/dashboard';

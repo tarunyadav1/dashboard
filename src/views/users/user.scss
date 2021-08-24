@@ -1,12 +1,12 @@
-@import '../../assets/scss/style.scss';
+@import '../../assets/scss/theme-var.scss';
 
 .users-container {
     border-radius: 20px;
     padding: 1.5rem 3rem;
     background-color: $white;
     overflow: auto;
+    margin: 2rem 0;
     margin-right: 2rem;
-    margin-top: 1rem;
     .top {
         display: flex;
         justify-content: space-between;

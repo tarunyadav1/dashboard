@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import './setting.scss';
-import ProfileCard from '../../ui-component/ProfileCard/ProfileCard';
+import ProfileCard from '../../ui-component/ProfileCard';
 
 import Hide from '../../assets/images/hide.svg';
 import Show from '../../assets/images/show.svg';

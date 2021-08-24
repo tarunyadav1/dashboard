@@ -4,7 +4,7 @@ import AddIcon from '../../assets/images/add.svg';
 import SearchIcon from '../../assets/images/search.svg';
 import Chevron from '../../assets/images/chevron.svg';
 
-import User from '../../ui-component/User/User';
+import User from '../../ui-component/User';
 import './user.scss';
 
 const Users = () => {

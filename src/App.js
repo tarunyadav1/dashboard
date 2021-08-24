@@ -1,5 +1,6 @@
 // routing
 import Routes from './routes';
+import './assets/scss/style.scss';
 
 function App() {
     return (
