@@ -36,9 +36,8 @@ const SCREEN = [
     }
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ setSelectedView, selectedView }) => {
     return (
-        // <div className="sidebar-container">
         <div className="sidebar-content">
             <div className="top">
                 <h1 className="brand-name">Dash.</h1>
@@ -46,7 +45,12 @@ const Sidebar = () => {
                 <div>
                     {SCREEN.map(({ page, path, icon }, i) => {
                         return (
-                            <Link key={page} to={path} className={`link`}>
+                            <Link
+                                onClick={() => setSelectedView(page)}
+                                key={page}
+                                to={path}
+                                className={`link ${selectedView === page && 'active'}`}
+                            >
                                 <img src={icon} alt={page} width="18px" height="18px" className="icon" />
                                 <p className={`name`}>{page}</p>
                             </Link>
@@ -64,7 +68,6 @@ const Sidebar = () => {
                 </a>
             </div>
         </div>
-        // </div>
     );
 };
 

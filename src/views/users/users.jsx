@@ -9,6 +9,7 @@ import './user.scss';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
+    const [searchUser, setSearchUser] = useState('');
 
     useEffect(() => {
         fetch(`https://reqres.in/api/users`)
@@ -17,6 +18,10 @@ const Users = () => {
                 setUsers(json.data);
             });
     }, []);
+
+    const handleSearchInput = (e) => {
+        setSearchUser(e.target.value);
+    };
 
     return (
         <div className="users-container">
@@ -27,7 +32,13 @@ const Users = () => {
 
                 <div className="left">
                     <div className="input-container">
-                        <input type="text" name="search user" placeholder="Search in table..." />
+                        <input
+                            type="text"
+                            name="search user"
+                            placeholder="Search in table..."
+                            value={searchUser}
+                            onChange={handleSearchInput}
+                        />
                         <img className="search" src={SearchIcon} alt="search" height="15" width="15" />
                     </div>
                     <button className="btn filter">
@@ -42,12 +53,15 @@ const Users = () => {
             </div>
 
             <div className="user-list">
-                {users.slice(4).map((user) => {
-                    return <User key={user.id} {...user} />;
-                })}
-                {users.map((user) => {
-                    return <User key={user.id} {...user} />;
-                })}
+                {searchUser
+                    ? users
+                          .filter((user) => `${user.first_name} ${user.last_name}`.toLowerCase().includes(searchUser.toLowerCase()))
+                          .map((user) => {
+                              return <User key={user.id} {...user} />;
+                          })
+                    : users.map((user) => {
+                          return <User key={user.id} {...user} />;
+                      })}
             </div>
 
             <div className="pagination">

@@ -46,7 +46,9 @@ const ProfileCard = () => {
                             <input type="tel" name="address" />
                         </div>
                         <div className="save-btn">
-                            <button type="submit">Save</button>
+                            <button onClick={(e) => e.preventDefault()} type="submit">
+                                Save
+                            </button>
                         </div>
                     </form>
                 </div>

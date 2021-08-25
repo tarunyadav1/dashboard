@@ -1,21 +1,23 @@
+import { useState } from 'react';
 import Sidebar from './Sidebar/Sidebar';
 import Header from './Header/Header';
 
 import './styles.scss';
 
-const index = ({ children }) => {
+const Layout = ({ children }) => {
+    const [selectedView, setSelectedView] = useState('Dashboard');
     return (
         <div className="dashboard-container">
             <div className="sidebar-container">
-                <Sidebar />
+                <Sidebar setSelectedView={setSelectedView} selectedView={selectedView} />
             </div>
 
             <div className="content">
-                <Header />
+                <Header selectedView={selectedView} />
                 {children}
             </div>
         </div>
     );
 };
 
-export default index;
+export default Layout;

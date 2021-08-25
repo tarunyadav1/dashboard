@@ -48,7 +48,7 @@ const AccountCard = () => {
                     </div>
 
                     <div className="save-btn">
-                        <button type="submit">Save</button>
+                        <button onClick={(e) => e.preventDefault()}>Save</button>
                     </div>
                 </form>
             </div>

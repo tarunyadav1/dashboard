@@ -30,4 +30,31 @@ const CARD_DATA = [
     }
 ];
 
-export { CARD_DATA };
+const LINE_CHART_DATA = [
+    {
+        name: 'Week 1',
+        user: 4000,
+        Guest: 6000,
+        amt: 2400
+    },
+    {
+        name: 'Week 2',
+        user: 3000,
+        Guest: 1000,
+        amt: 2210
+    },
+    {
+        name: 'Week 3',
+        user: 2000,
+        Guest: 9800,
+        amt: 2290
+    },
+    {
+        name: 'Week 4',
+        user: 2780,
+        Guest: 3908,
+        amt: 2000
+    }
+];
+
+export { CARD_DATA, LINE_CHART_DATA };

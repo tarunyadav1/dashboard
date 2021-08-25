@@ -3,10 +3,10 @@ import NotificationIcon from '../../assets/images/notify.svg';
 import UserIcon from '../../assets/images/noProfilePic.svg';
 import SearchIcon from '../../assets/images/search.svg';
 
-const Header = () => {
+const Header = ({ selectedView }) => {
     return (
         <div className="header-container">
-            <div className="view-name">Dashboard</div>
+            <div className="view-name">{selectedView}</div>
 
             <div className="header-items">
                 <div className="input">
