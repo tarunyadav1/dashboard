@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<h1 align="center">
+<a href="https://dashboard-bsa.vercel.app/">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dashboard Web Application
+</a>
 
-## Available Scripts
+</h1>
 
-In the project directory, you can run:
+## Technology Stack
 
-### `yarn start`
+-   CRA
+-   node-sass
+-   React Router
+-   Hooks
+-   recharts
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Requirements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   node --version >= 6
+-   yarn --version >= 3
 
-### `yarn test`
+## Local Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps
 
-### `yarn build`
+-   `git clone <repository-url>` , where `<repository-url>` is the link to the forked repository
+-   `cd dashboard`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+git clone https://github.com/USERNAME/dashboard.git
+cd dashboard
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   Install all the dependencies with `yarn install`
+-   Start the server with `yarn start`
+-   Visit your app at [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Questions
 
-### `yarn eject`
+-   What was the most challenging part?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    -   Working with the graph is I think challenging part. I have not worked with a graph previously. I will now explore more about the graph and how they work on a fundamental level.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   What was the most fun part?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    -   I like to start the project from the stretch. I think the most fun part of the project is to setting up the project from the stretch, selecting the folder structure and style guide.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   What do you think is wrong with this task or could be made better in this task?
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    -   There is nothing wrong with the design in particular. But, I wanted to have less space between the elements, so that more elements in the same area.
